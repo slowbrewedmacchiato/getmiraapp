@@ -1,232 +1,261 @@
-<!-- index.html -->
+<!-- index.html (revised) -->
 <!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MIRA — Video Journal for Emotional Wellness</title>
-    <meta name="description"
-        content="Gentle video journaling app for emotional awareness. Record daily reflections, track mood patterns, AI transcription, and build mindful habits without pressure." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIRA — Video Journal for Emotional Wellness</title>
+  <meta name="description" content="Gentle video journaling app for emotional awareness. Record daily reflections, track mood patterns, AI transcription, and build mindful habits without pressure." />
+  <meta name="robots" content="index,follow" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://slowbrewedmacchiato.github.io/getmiraapp/" />
+  <!-- Canonical (GitHub Pages project site) -->
+  <link rel="canonical" href="https://slowbrewedmacchiato.github.io/getmiraapp/" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <!-- Smart App Banner (iOS Safari) -->
+  <meta name="apple-itunes-app" content="app-id=6749046071">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="MIRA — Video Journal for Emotional Wellness" />
-    <meta property="og:description"
-        content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://slowbrewedmacchiato.github.io/getmiraapp/" />
-    <meta property="og:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MIRA — Video Journal for Emotional Wellness" />
-    <meta name="twitter:description"
-        content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
-    <meta name="twitter:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="MIRA — Video Journal for Emotional Wellness" />
+  <meta property="og:description" content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slowbrewedmacchiato.github.io/getmiraapp/" />
+  <meta property="og:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
+  <meta property="og:image:alt" content="MIRA app preview" />
 
-    <!-- Basic CSS. You can remove Tailwind if you want only styles.css -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Optional: Tailwind CDN for quick polish. Remove if you prefer styles.css only. -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Tailwind config inline is allowed. Keep it minimal. */
-        /* You can rely on styles.css for any custom tweaks */
-    </style>
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MIRA — Video Journal for Emotional Wellness" />
+  <meta name="twitter:description" content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
+  <meta name="twitter:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Tailwind CDN (keep for speed, can replace later with your build) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- JSON-LD: SoftwareApplication (basic; expand later with rating, offers) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MIRA",
+    "operatingSystem": "iOS",
+    "applicationCategory": "MobileApplication",
+    "description": "Video-first journaling to reflect on your mood and build mindful habits.",
+    "url": "https://slowbrewedmacchiato.github.io/getmiraapp/",
+    "downloadUrl": "https://apps.apple.com/app/id6749046071",
+    "image": "https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg",
+    "publisher": { "@type": "Organization", "name": "SlowBrewed Labs" }
+  }
+  </script>
 </head>
 
 <body class="bg-white text-neutral-900 antialiased">
-    <!-- Top Bar -->
-    <header class="w-full">
-        <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
-                <img src="assets/MiraLogo.png" alt="MIRA" class="h-7 w-7" />
-                <span class="font-semibold tracking-tight">MIRA</span>
-            </a>
-            <nav class="hidden sm:flex items-center gap-6">
-                <a href="#features" class="hover:opacity-80">Features</a>
-                <a href="#screens" class="hover:opacity-80">Screens</a>
-                <a href="privacy-policy.html" class="hover:opacity-80">Privacy</a>
-            </nav>
-            <a href="https://apps.apple.com/app/id6749046071"
-                class="ml-4 inline-flex items-center rounded-lg bg-purple-500 px-4 py-2 text-white text-sm font-semibold shadow hover:bg-purple-600">Get
-                the App</a>
-        </div>
-    </header>
+  <!-- Top Bar -->
+  <header class="w-full">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <!-- IMPORTANT: use ./ for GitHub Pages project sites to avoid linking to the user root -->
+      <a href="./" class="flex items-center gap-2" aria-label="MIRA home">
+        <img src="assets/MiraLogo.png" alt="MIRA logo" class="h-7 w-7" width="28" height="28" loading="eager" />
+        <span class="font-semibold tracking-tight">MIRA</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6">
+        <a href="#features" class="hover:opacity-80">Features</a>
+        <a href="#screens" class="hover:opacity-80">Screens</a>
+        <a href="privacy-policy.html" class="hover:opacity-80">Privacy</a>
+      </nav>
+      <a
+        href="https://apps.apple.com/app/id6749046071"
+        class="ml-4 inline-flex items-center rounded-lg bg-purple-500 px-4 py-2 text-white text-sm font-semibold shadow hover:bg-purple-600"
+        rel="noopener"
+        aria-label="Get MIRA on the App Store"
+      >Get the App</a>
+    </div>
+  </header>
 
-    <!-- Hero -->
-    <section class="relative">
-        <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                    Your gentle space for emotional reflection
-                </h1>
-                <p class="mt-4 text-lg text-neutral-700">
-                    Record short video logs that become mirrors into your mood and mindset. Build emotional awareness without pressure. Track patterns, celebrate growth, and understand yourself better.
-                </p>
-                <div class="mt-6 flex items-center gap-3">
-                    <a href="https://apps.apple.com/app/id6749046071"
-                        class="inline-flex items-center"
-                        aria-label="Download MIRA on the App Store">
-                        <img src="download_cta/AppStoreDownloadCTA_RGB_Black.svg" alt="Download on the App Store" class="h-12" />
-                    </a>
-                    <a href="#features" class="inline-flex items-center px-5 py-3 font-semibold hover:opacity-80">Learn
-                        more</a>
-                </div>
-                <p class="mt-3 text-xs text-neutral-500">
-                    Available for iPhone. More platforms in the future.
-                </p>
-            </div>
-            <div class="relative">
-                <!-- iPhone Frame with MIRA Demo Video Overlay -->
-                <div class="relative w-full max-w-[280px] mx-auto" style="filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25));">
-                    <!-- iPhone Frame Background -->
-                    <img src="animation/iPhoneFrame.webp" alt="iPhone Frame" 
-                        class="w-full h-auto relative z-10" />
-                    
-                    <!-- Video Container positioned over iPhone screen -->
-                    <div class="absolute top-[1.0%] left-[2.8%] right-[2.8%] bottom-[0.5%] z-20">
-                        <div class="w-full h-full rounded-[3.0rem] overflow-hidden">
-                            <video 
-                                class="w-full h-full object-cover"
-                                autoplay 
-                                muted 
-                                loop 
-                                playsinline
-                                preload="auto">
-                                <source src="animation/mira_demo.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Hero -->
+  <section class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Your gentle space for emotional reflection
+        </h1>
+        <p class="mt-4 text-lg text-neutral-700">
+          Record short video logs that become mirrors into your mood and mindset. Build emotional awareness without pressure. Track patterns, celebrate growth, and understand yourself better.
+        </p>
+        <div class="mt-6 flex items-center gap-3">
+          <a
+            href="https://apps.apple.com/app/id6749046071"
+            class="inline-flex items-center"
+            aria-label="Download MIRA on the App Store"
+            rel="noopener"
+          >
+            <img src="download_cta/AppStoreDownloadCTA_RGB_Black.svg" alt="Download on the App Store" class="h-12" width="180" height="40" loading="eager" />
+          </a>
+          <a href="#features" class="inline-flex items-center px-5 py-3 font-semibold hover:opacity-80">Learn more</a>
         </div>
-    </section>
+        <p class="mt-3 text-xs text-neutral-500">
+          Available for iPhone. More platforms in the future.
+        </p>
+      </div>
 
-    <!-- Social Proof -->
-    <section class="bg-neutral-50 border-y">
-        <div class="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-3 gap-6 text-center">
-            <div>
-                <div class="text-3xl font-extrabold">30 sec</div>
-                <div class="text-sm text-neutral-600">Quick daily reflection</div>
+      <!-- Phone frame with looping demo video -->
+      <div class="relative">
+        <div class="relative w-full max-w-[280px] mx-auto" style="filter: drop-shadow(0 25px 50px rgba(0,0,0,0.25));">
+          <img src="animation/iPhoneFrame.webp" alt="iPhone frame" class="w-full h-auto relative z-10" width="560" height="1144" loading="eager" />
+          <div class="absolute top-[1.0%] left-[2.8%] right-[2.8%] bottom-[0.5%] z-20">
+            <div class="w-full h-full rounded-[3.0rem] overflow-hidden">
+              <video
+                class="w-full h-full object-cover"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="MIRA demo video"
+                id="mira-demo"
+                poster="animation/mira_demo_poster.jpg"
+              >
+                <source src="animation/mira_demo.mp4" type="video/mp4" />
+                <!-- Fallback text for very old browsers -->
+                Your browser does not support the video tag.
+              </video>
+              <noscript>
+                <img src="animation/mira_demo_poster.jpg" alt="MIRA demo screenshot" class="w-full h-full object-cover" />
+              </noscript>
             </div>
-            <div>
-                <div class="text-3xl font-extrabold">No pressure</div>
-                <div class="text-sm text-neutral-600">Gentle habit building</div>
-            </div>
-            <div>
-                <div class="text-3xl font-extrabold">AI-powered</div>
-                <div class="text-sm text-neutral-600">Smart transcription & insights</div>
-            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="mx-auto max-w-6xl px-4 py-16">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Video Journaling</h3>
-                <p class="mt-2 text-neutral-700">
-                    Record daily video logs using your front camera. Each entry becomes a mirror into your mood, mindset, and daily thoughts.
-                </p>
-            </div>
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">AI Transcription</h3>
-                <p class="mt-2 text-neutral-700">
-                    On-demand transcription turns your spoken reflections into editable notes. Add context, insights, or gratitude to each entry.
-                </p>
-            </div>
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Mood Tracking</h3>
-                <p class="mt-2 text-neutral-700">
-                    Track your mood with emoji-based scales. Spot patterns in how you feel and when you journal over time.
-                </p>
-            </div>
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Reflection Prompts</h3>
-                <p class="mt-2 text-neutral-700">
-                    Built-in meaningful prompts inspire deeper self-reflection. Find inspiration when you need it most.
-                </p>
-            </div>
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Insights Dashboard</h3>
-                <p class="mt-2 text-neutral-700">
-                    State of Mind view shows mood patterns. Activity Insights reveal your journaling rhythm and peak hours.
-                </p>
-            </div>
-            <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Gentle Milestones</h3>
-                <p class="mt-2 text-neutral-700">
-                    Celebrate consistency with meaningful milestones. Share styled achievement cards. No pressured streaks—just honest growth.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Screens -->
-    <section id="screens" class="mx-auto max-w-6xl px-4 pb-16">
-        <h2 class="text-2xl md:text-3xl font-extrabold">A quick look</h2>
-        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <img src="https://placehold.co/820x1640/png?text=Screen+1" alt="MIRA screen 1"
-                class="rounded-2xl border shadow-sm" loading="lazy" />
-            <img src="https://placehold.co/820x1640/png?text=Screen+2" alt="MIRA screen 2"
-                class="rounded-2xl border shadow-sm" loading="lazy" />
-            <img src="https://placehold.co/820x1640/png?text=Screen+3" alt="MIRA screen 3"
-                class="rounded-2xl border shadow-sm" loading="lazy" />
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="bg-purple-500">
-        <div class="mx-auto max-w-6xl px-4 py-12 text-center">
-            <h3 class="text-2xl md:text-3xl font-extrabold text-white">Start your emotional wellness journey</h3>
-            <p class="mt-2 text-purple-100">
-                Build emotional awareness through gentle video journaling. Track patterns, celebrate growth, and understand yourself better.
-            </p>
-            <a href="https://apps.apple.com/app/id6749046071"
-                class="mt-6 inline-flex items-center">
-                <img src="download_cta/AppStoreDownloadCTA_RGB_White.svg" alt="Download on the App Store" class="h-12" />
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-neutral-950 text-neutral-200">
-        <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6">
-            <div>
-                <div class="flex items-center gap-2">
-                    <img src="assets/MiraLogo.png" alt="MIRA" class="h-6 w-6" />
-                    <span class="font-semibold">MIRA</span>
-                </div>
-                <p class="mt-2 text-sm text-neutral-400">
-                    Video Diary & Journal that helps you reflect, track, and grow.
-                </p>
-            </div>
-            <div class="text-sm">
-                <ul class="space-y-2">
-                    <li><a href="/" class="hover:opacity-80">Home</a></li>
-                    <li><a href="privacy-policy.html" class="hover:opacity-80">Privacy Policy</a></li>
-                    <li><a href="mailto:hello@example.com" class="hover:opacity-80">Contact</a></li>
-                </ul>
-            </div>
-            <div class="text-sm">
-                <p>© <span id="year"></span> SlowBrewed Labs. All rights reserved.</p>
-            </div>
-        </div>
+        <!-- Reduce motion preference: pause the loop -->
         <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
+          try {
+            const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const vid = document.getElementById('mira-demo');
+            if (mq.matches && vid) { vid.pause(); }
+            mq.addEventListener?.('change', (e) => { e.matches ? vid.pause() : vid.play(); });
+          } catch {}
         </script>
-    </footer>
-</body>
+      </div>
+    </div>
+  </section>
 
+  <!-- Social Proof / Value Props -->
+  <section class="bg-neutral-50 border-y">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-3 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-extrabold">30 sec</div>
+        <div class="text-sm text-neutral-600">Quick daily reflection</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold">No pressure</div>
+        <div class="text-sm text-neutral-600">Gentle habit building</div>
+      </div>
+      <div>
+        <div class="text-3xl font-extrabold">AI‑powered</div>
+        <div class="text-sm text-neutral-600">Smart transcription & insights</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">Video Journaling</h3>
+        <p class="mt-2 text-neutral-700">
+          Record daily video logs using your front camera. Each entry becomes a mirror into your mood, mindset, and daily thoughts.
+        </p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">AI Transcription</h3>
+        <p class="mt-2 text-neutral-700">
+          On‑demand transcription turns your spoken reflections into editable notes. Add context, insights, or gratitude to each entry.
+        </p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">Mood Tracking</h3>
+        <p class="mt-2 text-neutral-700">
+          Track your mood with emoji‑based scales. Spot patterns in how you feel and when you journal over time.
+        </p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">Reflection Prompts</h3>
+        <p class="mt-2 text-neutral-700">
+          Built‑in meaningful prompts inspire deeper self‑reflection. Find inspiration when you need it most.
+        </p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">Insights Dashboard</h3>
+        <p class="mt-2 text-neutral-700">
+          State of Mind view shows mood patterns. Activity Insights reveal your journaling rhythm and peak hours.
+        </p>
+      </article>
+      <article class="rounded-2xl border p-6">
+        <h3 class="text-xl font-bold">Gentle Milestones</h3>
+        <p class="mt-2 text-neutral-700">
+          Celebrate consistency with meaningful milestones. Share styled achievement cards. No pressured streaks—just honest growth.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Screens (replace placeholders with real shots when ready) -->
+  <section id="screens" class="mx-auto max-w-6xl px-4 pb-16">
+    <h2 class="text-2xl md:text-3xl font-extrabold">A quick look</h2>
+    <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <img src="https://placehold.co/820x1640/png?text=Screen+1" alt="MIRA screen 1" class="rounded-2xl border shadow-sm" loading="lazy" width="410" height="820" />
+      <img src="https://placehold.co/820x1640/png?text=Screen+2" alt="MIRA screen 2" class="rounded-2xl border shadow-sm" loading="lazy" width="410" height="820" />
+      <img src="https://placehold.co/820x1640/png?text=Screen+3" alt="MIRA screen 3" class="rounded-2xl border shadow-sm" loading="lazy" width="410" height="820" />
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-purple-500">
+    <div class="mx-auto max-w-6xl px-4 py-12 text-center">
+      <h3 class="text-2xl md:text-3xl font-extrabold text-white">Start your emotional wellness journey</h3>
+      <p class="mt-2 text-purple-100">
+        Build emotional awareness through gentle video journaling. Track patterns, celebrate growth, and understand yourself better.
+      </p>
+      <a href="https://apps.apple.com/app/id6749046071" class="mt-6 inline-flex items-center" aria-label="Download MIRA on the App Store" rel="noopener">
+        <img src="download_cta/AppStoreDownloadCTA_RGB_White.svg" alt="Download on the App Store" class="h-12" width="180" height="40" loading="lazy" />
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-950 text-neutral-200">
+    <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="assets/MiraLogo.png" alt="MIRA logo" class="h-6 w-6" width="24" height="24" loading="lazy" />
+          <span class="font-semibold">MIRA</span>
+        </div>
+        <p class="mt-2 text-sm text-neutral-400">
+          Video Diary & Journal that helps you reflect, track, and grow.
+        </p>
+      </div>
+      <div class="text-sm">
+        <ul class="space-y-2">
+          <!-- IMPORTANT: use relative links for GitHub Pages project sites -->
+          <li><a href="./" class="hover:opacity-80">Home</a></li>
+          <li><a href="privacy-policy.html" class="hover:opacity-80">Privacy Policy</a></li>
+          <li><a href="mailto:hello@example.com" class="hover:opacity-80">Contact</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <p>© <span id="year"></span> SlowBrewed Labs. All rights reserved.</p>
+      </div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
 </html>
