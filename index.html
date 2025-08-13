@@ -5,33 +5,33 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MIRA — Video Diary & Journal</title>
+    <title>MIRA — Video Journal for Emotional Wellness</title>
     <meta name="description"
-        content="MIRA is a video-first journaling app that helps you reflect on your mood, record daily entries, and build a lasting self care routine." />
+        content="Gentle video journaling app for emotional awareness. Record daily reflections, track mood patterns, AI transcription, and build mindful habits without pressure." />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://slowbrewedmacchiato.github.io/getmiraapp/" />
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="MIRA — Video Diary & Journal" />
+    <meta property="og:title" content="MIRA — Video Journal for Emotional Wellness" />
     <meta property="og:description"
-        content="Record your day in a minute. Track mood. Build habits. Your memories in motion." />
+        content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://slowbrewedmacchiato.github.io/getmiraapp/" />
     <meta property="og:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="MIRA — Video Diary & Journal" />
+    <meta name="twitter:title" content="MIRA — Video Journal for Emotional Wellness" />
     <meta name="twitter:description"
-        content="Record your day in a minute. Track mood. Build habits. Your memories in motion." />
+        content="Gentle video journaling for emotional awareness. Track mood patterns, AI transcription, and build mindful habits without pressure." />
     <meta name="twitter:image" content="https://slowbrewedmacchiato.github.io/getmiraapp/og-image.jpg" />
 
     <!-- Basic CSS. You can remove Tailwind if you want only styles.css -->
@@ -49,7 +49,7 @@
     <header class="w-full">
         <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
             <a href="/" class="flex items-center gap-2">
-                <img src="MiraLogo.png" alt="MIRA" class="h-7 w-7" />
+                <img src="assets/MiraLogo.png" alt="MIRA" class="h-7 w-7" />
                 <span class="font-semibold tracking-tight">MIRA</span>
             </a>
             <nav class="hidden sm:flex items-center gap-6">
@@ -68,15 +68,17 @@
         <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
             <div>
                 <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                    Video-first journaling for real daily reflection
+                    Your gentle space for emotional reflection
                 </h1>
                 <p class="mt-4 text-lg text-neutral-700">
-                    Record a short video. Track your mood. Notice patterns. Build a gentle routine that sticks.
+                    Record short video logs that become mirrors into your mood and mindset. Build emotional awareness without pressure. Track patterns, celebrate growth, and understand yourself better.
                 </p>
                 <div class="mt-6 flex items-center gap-3">
                     <a href="https://apps.apple.com/app/id6749046071"
-                        class="inline-flex items-center rounded-lg bg-purple-500 px-5 py-3 text-white font-semibold shadow hover:bg-purple-600"
-                        aria-label="Download MIRA on the App Store">Download on the App Store</a>
+                        class="inline-flex items-center"
+                        aria-label="Download MIRA on the App Store">
+                        <img src="download_cta/AppStoreDownloadCTA_RGB_Black.svg" alt="Download on the App Store" class="h-12" />
+                    </a>
                     <a href="#features" class="inline-flex items-center px-5 py-3 font-semibold hover:opacity-80">Learn
                         more</a>
                 </div>
@@ -115,39 +117,57 @@
     <section class="bg-neutral-50 border-y">
         <div class="mx-auto max-w-6xl px-4 py-10 grid sm:grid-cols-3 gap-6 text-center">
             <div>
-                <div class="text-3xl font-extrabold">1 min</div>
-                <div class="text-sm text-neutral-600">Daily video to get started</div>
+                <div class="text-3xl font-extrabold">30 sec</div>
+                <div class="text-sm text-neutral-600">Quick daily reflection</div>
             </div>
             <div>
-                <div class="text-3xl font-extrabold">Clarity</div>
-                <div class="text-sm text-neutral-600">Track mood and see patterns</div>
+                <div class="text-3xl font-extrabold">No pressure</div>
+                <div class="text-sm text-neutral-600">Gentle habit building</div>
             </div>
             <div>
-                <div class="text-3xl font-extrabold">Private</div>
-                <div class="text-sm text-neutral-600">Your entries stay on your device</div>
+                <div class="text-3xl font-extrabold">AI-powered</div>
+                <div class="text-sm text-neutral-600">Smart transcription & insights</div>
             </div>
         </div>
     </section>
 
     <!-- Features -->
     <section id="features" class="mx-auto max-w-6xl px-4 py-16">
-        <div class="grid md:grid-cols-3 gap-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Daily Video Entries</h3>
+                <h3 class="text-xl font-bold">Video Journaling</h3>
                 <p class="mt-2 text-neutral-700">
-                    Capture your day in a short video. Build a simple ritual that fits your life.
+                    Record daily video logs using your front camera. Each entry becomes a mirror into your mood, mindset, and daily thoughts.
+                </p>
+            </div>
+            <div class="rounded-2xl border p-6">
+                <h3 class="text-xl font-bold">AI Transcription</h3>
+                <p class="mt-2 text-neutral-700">
+                    On-demand transcription turns your spoken reflections into editable notes. Add context, insights, or gratitude to each entry.
                 </p>
             </div>
             <div class="rounded-2xl border p-6">
                 <h3 class="text-xl font-bold">Mood Tracking</h3>
                 <p class="mt-2 text-neutral-700">
-                    Record how you feel and see how it changes over time.
+                    Track your mood with emoji-based scales. Spot patterns in how you feel and when you journal over time.
                 </p>
             </div>
             <div class="rounded-2xl border p-6">
-                <h3 class="text-xl font-bold">Prompt Collections</h3>
+                <h3 class="text-xl font-bold">Reflection Prompts</h3>
                 <p class="mt-2 text-neutral-700">
-                    Use gentle prompts when you are stuck. Make reflection easy.
+                    Built-in meaningful prompts inspire deeper self-reflection. Find inspiration when you need it most.
+                </p>
+            </div>
+            <div class="rounded-2xl border p-6">
+                <h3 class="text-xl font-bold">Insights Dashboard</h3>
+                <p class="mt-2 text-neutral-700">
+                    State of Mind view shows mood patterns. Activity Insights reveal your journaling rhythm and peak hours.
+                </p>
+            </div>
+            <div class="rounded-2xl border p-6">
+                <h3 class="text-xl font-bold">Gentle Milestones</h3>
+                <p class="mt-2 text-neutral-700">
+                    Celebrate consistency with meaningful milestones. Share styled achievement cards. No pressured streaks—just honest growth.
                 </p>
             </div>
         </div>
@@ -169,13 +189,14 @@
     <!-- CTA -->
     <section class="bg-purple-500">
         <div class="mx-auto max-w-6xl px-4 py-12 text-center">
-            <h3 class="text-2xl md:text-3xl font-extrabold text-white">Start your video journaling journey</h3>
+            <h3 class="text-2xl md:text-3xl font-extrabold text-white">Start your emotional wellness journey</h3>
             <p class="mt-2 text-purple-100">
-                Build a habit that supports your mood and your memory.
+                Build emotional awareness through gentle video journaling. Track patterns, celebrate growth, and understand yourself better.
             </p>
             <a href="https://apps.apple.com/app/id6749046071"
-                class="mt-6 inline-flex items-center rounded-lg bg-white px-6 py-3 font-semibold text-purple-700 shadow hover:opacity-90">Download
-                on the App Store</a>
+                class="mt-6 inline-flex items-center">
+                <img src="download_cta/AppStoreDownloadCTA_RGB_White.svg" alt="Download on the App Store" class="h-12" />
+            </a>
         </div>
     </section>
 
@@ -184,7 +205,7 @@
         <div class="mx-auto max-w-6xl px-4 py-10 grid md:grid-cols-3 gap-6">
             <div>
                 <div class="flex items-center gap-2">
-                    <img src="MiraLogo.png" alt="MIRA" class="h-6 w-6" />
+                    <img src="assets/MiraLogo.png" alt="MIRA" class="h-6 w-6" />
                     <span class="font-semibold">MIRA</span>
                 </div>
                 <p class="mt-2 text-sm text-neutral-400">
