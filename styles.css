@@ -1,0 +1,38 @@
+/* styles.css */
+/* Minimal base styles. You can rely on Tailwind via CDN for quick layout and leave this file for tiny tweaks. */
+
+:root {
+    color-scheme: light dark;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Improve image rendering */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography if Tailwind is removed */
+body.no-tailwind {
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    color: #0a0a0a;
+}
+
+.prose {
+    max-width: 75ch;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
