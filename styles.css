@@ -198,6 +198,14 @@ a:hover {
     border-left: 4px solid #9333ea;
 }
 
+.feature-card.privacy-control {
+    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+    border-left: 4px solid #10b981;
+    background: linear-gradient(135deg, #fef3c7, #fde68a, #fcd34d);
+    border-left: 4px solid #f59e0b;
+    box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.1);
+}
+
 .section-header {
     color: #7c3aed;
     position: relative;
