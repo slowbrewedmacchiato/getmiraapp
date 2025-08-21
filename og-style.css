@@ -1,0 +1,138 @@
+/* og-style.css - Styles for MIRA OG image generation */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #1f2937;
+  overflow: hidden;
+}
+
+/* Container setup */
+.og-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2937;
+}
+
+/* Main canvas - exactly 1200x630 */
+.og-canvas {
+  width: 1200px;
+  height: 630px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+/* Left Column */
+.left-column {
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  position: relative;
+}
+
+.left-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.03), rgba(192, 132, 252, 0.03));
+  pointer-events: none;
+}
+
+.logo-section {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.mira-logo {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.tagline-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-tagline {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #171717;
+  margin: 0;
+  max-width: 480px;
+}
+
+.sub-text {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #6b7280;
+  margin: 0;
+  max-width: 480px;
+}
+
+.app-store-section {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.app-store-badge {
+  width: 180px;
+  height: 60px;
+  display: block;
+}
+
+/* Right Column */
+.right-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+}
+
+.device-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-screenshot {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* Ensure no scrollbars and exact dimensions */
+html, body {
+  overflow: hidden;
+}
+
+.og-canvas {
+  flex-shrink: 0;
+}
