@@ -1,4 +1,4 @@
 # robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://slowbrewedmacchiato.github.io/getmiraapp
+Sitemap: https://slowbrewedmacchiato.github.io/getmiraapp/sitemap.xml
